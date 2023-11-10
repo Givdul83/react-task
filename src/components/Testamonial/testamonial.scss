@@ -5,13 +5,15 @@
     
 
     .container.one {
-        text-align: center;
+        
         padding-bottom: 120px;
         background-color: #FFFFFF;
         padding-right: 0;
         padding-left: 0;
 
         .section-title {
+            text-align: center;
+            display:flex;
 
             p {
                 color: #f94d1C;
@@ -34,7 +36,6 @@
         display: grid;
         grid-template-columns:  auto auto;
         justify-content: center;
-        
         column-gap: 20px;
         text-align: center;
        }
@@ -167,8 +168,12 @@
                 grid-column: span 1;
             }
         }
-    
+    .btn{
+        display:flex;
+        justify-content: center;
+    }
     .btn-black {
+             
                 padding:15px 20px;
                 
                 i {

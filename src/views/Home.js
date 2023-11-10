@@ -29,7 +29,7 @@ const Home = () => {
     <Projects/>
     <Team/>
     <Testamonial/>
-    <NewsArticles/>
+    <NewsArticles className="news-articles"/>
     <NewsLetter/>
     <Footer/>
     </div>

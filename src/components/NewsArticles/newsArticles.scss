@@ -1,9 +1,9 @@
 .news-articles {
     background-color: #FFFFFF;
     
-
+}
    .container.one {
-    background-color: #FFFFFF;
+   
     padding: 0px;
     padding-bottom: 40px;
     
@@ -51,7 +51,7 @@
     }   
 
     .container.dates {
-        background-color: #FFFFFF;
+       
         padding: 0px;
         display: flex;
         flex-direction: column;
@@ -118,4 +118,8 @@
                 color: #191919;
             }
     }
-}
+
+
+.news-articles-background {
+    background-color: #F0EFE9
+} 

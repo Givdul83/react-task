@@ -72,6 +72,7 @@ const FormSection = () => {
    const [regSuccess, setRegSuccess]= useState('')
 
    async function validateForm() {
+    setRegSuccess('Something went wrong');
     validateName();
     validateEmail();
     validateMessage();
@@ -95,9 +96,6 @@ const FormSection = () => {
           }, 
           body: json
       })
-        console.log("Response from server", await res.text())
-        
-        let data
 
         if (res.status === 200){
         
@@ -105,7 +103,8 @@ const FormSection = () => {
          console.log(res.status)
          
         } else {
-          data= await res.text()
+         
+          const data= await res.text()
           console.log(data);
         }
 
@@ -143,7 +142,7 @@ const handleMessageChange = (event) => {
                 <div><p className="error">{emptyMessage}</p></div>
                 </form>
             <button className="btn-yellow" onClick={validateForm} >Send message <i className="fa-solid fa-arrow-up-right"></i></button>
-            <div><p className="registered">{regSuccess}</p></div>
+            <div><p className="registered" style={{ color: regSuccess.includes('wrong') ? 'red' : 'green' }} >{regSuccess}</p></div>
         </div> 
         </div>
         </section>

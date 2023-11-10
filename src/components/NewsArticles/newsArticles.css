@@ -1,31 +1,31 @@
 .news-articles {
   background-color: #FFFFFF;
 }
-.news-articles .container.one {
-  background-color: #FFFFFF;
+
+.container.one {
   padding: 0px;
   padding-bottom: 40px;
 }
-.news-articles .container.one .section-title {
+.container.one .section-title {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: center;
 }
 @media (min-width: 1200px) {
-  .news-articles .container.one .section-title {
+  .container.one .section-title {
     display: grid;
     grid: 1f;
     grid-template-areas: "p  n" "h2 btn";
   }
 }
-.news-articles .container.one .section-title p {
+.container.one .section-title p {
   grid-area: p;
 }
-.news-articles .container.one .section-title h2 {
+.container.one .section-title h2 {
   grid-area: h2;
 }
-.news-articles .container.one .section-title .btn-transparent {
+.container.one .section-title .btn-transparent {
   grid-area: btn;
   border: 1px solid #191919;
   text-align: center;
@@ -37,12 +37,12 @@
   margin-top: 40px;
 }
 @media (min-width: 1200px) {
-  .news-articles .container.one .section-title .btn-transparent {
+  .container.one .section-title .btn-transparent {
     margin-top: 0px;
   }
 }
-.news-articles .container.dates {
-  background-color: #FFFFFF;
+
+.container.dates {
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
   gap: 30px;
 }
 @media (min-width: 992px) {
-  .news-articles .container.dates {
+  .container.dates {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -64,24 +64,27 @@
   }
 }
 @media (min-width: 1400px) {
-  .news-articles .container.dates {
+  .container.dates {
     display: flex;
     flex-direction: row;
     text-align: left;
   }
 }
-.news-articles .container.dates p {
+
+.container.dates p {
   color: #191919;
 }
-.news-articles .container.dates img {
+
+.container.dates img {
   margin-left: 0;
   margin-right: 0;
 }
-.news-articles .date-3 {
+
+.date-3 {
   grid-column: auto;
 }
 @media (min-width: 992px) {
-  .news-articles .date-3 {
+  .date-3 {
     grid-column: span 2;
     margin-left: 0;
     margin-right: 0;
@@ -89,20 +92,25 @@
     max-width: 550px;
   }
 }
-.news-articles .container.dots {
+
+.container.dots {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 90px;
   padding-top: 65px;
 }
-.news-articles .container.dots i {
+.container.dots i {
   max-width: 25px;
   padding-bottom: 50px;
   font-size: 4rem;
   color: rgba(25, 25, 25, 0.2274509804);
   justify-content: center;
 }
-.news-articles .container.dots #darkdot {
+.container.dots #darkdot {
   color: #191919;
+}
+
+.news-articles-background {
+  background-color: #F0EFE9;
 }

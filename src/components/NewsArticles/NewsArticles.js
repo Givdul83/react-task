@@ -6,14 +6,15 @@ import img_classroom from '../../assets/images/classroom.png'
 import img_chat from '../../assets/images/chat.png'
 import img_books from '../../assets/images/books.png'
 
-const NewsArticles = () => {
+
+const NewsArticles = ({className}) => {
   return (
-    <section className="news-articles">
+    <section className={`${className}`}>
             <div className="container one">
                 <div className="section-title">
                     <p>Article & News</p>
                     <h2>Get Every Single Articles & News</h2>
-                    <Link to="articles.html" target="_blank" className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-up-right"></i></Link>
+                    <Link to='/news' target="_blank" className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-up-right"></i></Link>
                 </div>
             </div>
             <div className="container dates">

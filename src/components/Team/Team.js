@@ -11,13 +11,13 @@ import TeamMember from '../TeamMember/TeamMember';
 const Team = () => {
 
    const members= [
-    { imgName:img_kristine,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'KristinePalmer', position:'Chef Operation Officer'},
+    { imgName:img_kristine,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'Kristine Palmer', position:'Chef Operation Officer'},
     
-    {imgName:img_mark,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'KristinePalmer', position:'Chef Operation Officer'},
+    {imgName:img_mark,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'Mark Abrui', position:'Senior Consultant'},
 
-    {imgName:img_kimberly,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'KristinePalmer', position:'Chef Operation Officer'},
+    {imgName:img_kimberly,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'Kimberly Hansen', position:'Senior Consultant'},
 
-    {imgName:img_justin,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'KristinePalmer', position:'Chef Operation Officer'},
+    {imgName:img_justin,  alt:'Kristine Palmer, Chef Operation Officer' , title: 'Justin Willoman', position:'Senior Tech Consultant'},
 
     ];
 

@@ -3,11 +3,14 @@
   padding-bottom: 120px;
 }
 .testamonial .container.one {
-  text-align: center;
   padding-bottom: 120px;
   background-color: #FFFFFF;
   padding-right: 0;
   padding-left: 0;
+}
+.testamonial .container.one .section-title {
+  text-align: center;
+  display: flex;
 }
 .testamonial .container.one .section-title p {
   color: #f94d1C;
@@ -155,6 +158,10 @@
     margin-left: 0;
     grid-column: span 1;
   }
+}
+.testamonial .btn {
+  display: flex;
+  justify-content: center;
 }
 .testamonial .btn-black {
   padding: 15px 20px;
