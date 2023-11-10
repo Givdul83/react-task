@@ -1,0 +1,36 @@
+.first-section {
+  background-color: #F0EFE9;
+  position: relative;
+  height: 220px;
+}
+.first-section .container {
+  background-color: #F0EFE9;
+}
+.first-section .lines {
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  max-width: 50%;
+  bottom: 0;
+}
+.first-section .link-part {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+.first-section .link-part a {
+  color: #191919;
+  text-decoration: none;
+}
+.first-section .link-part a:hover {
+  color: #f94d1C;
+}
+.first-section h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "DM Sans", sans serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #191919;
+}

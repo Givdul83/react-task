@@ -1,0 +1,198 @@
+.features {
+  background-color: #FFFFFF;
+}
+.features .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 70px;
+  border: none;
+}
+.features .container .btn-features {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60px;
+  max-width: 460px;
+}
+.features .container .btn-features i {
+  padding-left: 10px;
+}
+.features .container .btn-features:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+}
+@media (max-width: 1200px) {
+  .features .container .btn-features {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .features .container {
+    text-align: left;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .features .container {
+    gap: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .features .container .feat-1 {
+    max-width: 470px;
+  }
+}
+.features .container .feat-1 p {
+  color: #f94d1C;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+@media (min-width: 1200px) {
+  .features .container .feat-1 p {
+    text-align: left;
+    padding-top: 80px;
+  }
+}
+.features .container .feat-1 h2 {
+  font-family: "DM Sans", sans serif;
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .features .container .feat-1 h2 {
+    padding-top: 0px;
+  }
+}
+.features .container .feats {
+  display: grid;
+  text-align: center;
+  grid-template-areas: "feat-2 feat-3" "feat-4 feat-5";
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 1200px) {
+  .features .container .feats {
+    padding-top: 105px;
+    padding-left: 0px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1400px) {
+  .features .container .feats {
+    padding-right: 100px;
+  }
+}
+.features .container .feats #hidden {
+  display: none;
+}
+.features .container .feats h3 {
+  font-family: "DM Sans", sans serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  align-self: center;
+}
+@media (min-width: 1200px) {
+  .features .container .feats h3 {
+    align-self: flex-start;
+  }
+}
+.features .container .feats p {
+  letter-spacing: -1px;
+  align-self: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .features .container .feats p {
+    text-align: left;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+}
+.features .container .feats #feat-2 {
+  grid-area: feat-2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  max-width: 307px;
+}
+@media (min-width: 1200px) {
+  .features .container .feats #feat-2 {
+    padding-bottom: 60px;
+    align-items: start;
+  }
+}
+.features .container .feats #feat-3 {
+  grid-area: feat-3;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  max-width: 307px;
+}
+@media (min-width: 1200px) {
+  .features .container .feats #feat-3 {
+    padding-bottom: 60px;
+    align-items: start;
+  }
+}
+.features .container .feats #feat-4 {
+  grid-area: feat-4;
+  display: flex;
+  flex-direction: column;
+  max-width: 307px;
+}
+@media (min-width: 1200px) {
+  .features .container .feats #feat-4 {
+    padding-bottom: 60px;
+    align-items: start;
+  }
+}
+.features .container .feats #feat-5 {
+  grid-area: feat-5;
+  display: flex;
+  flex-direction: column;
+  max-width: 307px;
+}
+@media (min-width: 1200px) {
+  .features .container .feats #feat-5 {
+    padding-bottom: 60px;
+    align-items: start;
+  }
+}
+.features .container .feats .fa-regular.fa-handshake {
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.features .container .feats .fa-regular.fa-lightbulb-on {
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.features .container .feats .fa-light.fa-chart-mixed-up-circle-dollar {
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.features .container .feats .fa-regular.fa-cube {
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}

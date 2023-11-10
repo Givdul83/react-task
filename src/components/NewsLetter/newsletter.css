@@ -1,0 +1,88 @@
+.newsletter {
+  display: flex;
+  position: relative;
+  background-color: #F0EFE9;
+  padding-top: 80px;
+  padding-bottom: 105px;
+}
+.newsletter .background-lines {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .newsletter .background-lines {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    z-index: 0;
+  }
+}
+.newsletter .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  .newsletter .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.newsletter h2 {
+  font-family: "DM sans, sans serif";
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+@media (min-width: 1400px) {
+  .newsletter h2 {
+    margin-right: 150px;
+    margin-top: 40px;
+  }
+}
+.newsletter .mail-valid {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter form input {
+  color: #191919;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 70px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid #DAD9D3;
+}
+@media (min-width: 1400px) {
+  .newsletter form {
+    margin-top: 40px;
+  }
+}
+.newsletter .btn-yellow {
+  padding: 15px 20px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+@media (min-width: 1400px) {
+  .newsletter .btn-yellow {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+.newsletter .space {
+  height: 35px;
+}
+.newsletter #reg-success {
+  text-align: center;
+  color: green;
+}
+.newsletter #error-email {
+  text-align: center;
+  color: rgb(196, 114, 114);
+}

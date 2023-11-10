@@ -1,0 +1,79 @@
+.container-newsheadline {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+.container-grid {
+  display: grid;
+  background-color: #FFFFFF;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 40px;
+    text-align: left;
+  }
+}
+@media (min-width: 1400px) {
+  .container-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+.container-grid a {
+  text-decoration: none;
+  color: #191919;
+}
+.container-grid .newsbox {
+  max-width: 420px;
+  height: 430px;
+  position: relative;
+}
+.container-grid .newsbox .img {
+  width: 100%;
+  height: 230px;
+  margin-left: 0;
+  z-index: 0;
+}
+.container-grid .newsbox .hidden {
+  display: none;
+}
+.container-grid .date-box {
+  border: 1px solid black;
+  width: 55px;
+  height: 65px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  background-color: #F9D783;
+}
+.container-grid .date-box h4 {
+  font-family: DM sans;
+  font-weight: 700;
+  color: #191919;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  justify-self: center;
+}
+.container-grid .date-box p {
+  font-family: Inter;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 0px;
+  letter-spacing: -1px;
+}

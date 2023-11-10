@@ -1,0 +1,94 @@
+.team {
+    background-color: #F9D783;
+    
+        .container.one {
+            padding-bottom: 75px;
+    
+            @media(min-width:992px) {
+                padding-bottom: 95px;
+            }
+
+        .section-title{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+
+            @media(min-width:992px) {
+                text-align: left;
+                align-items: left;
+            display: grid;
+            grid: 1f;
+            grid-template-areas: "p  n"
+                                 "h2 btn";
+            }
+        p {
+            grid-area: p;
+        }
+        h2 {
+            padding-bottom: 20px;
+            grid-area: h2;
+            @media(min-width: 992px) {
+                padding-bottom: 0px;
+            }
+        }
+        .btn-yellow {
+            grid-area: btn;
+            border: 1px solid #191919;
+            text-align: center;
+            height: 50px;
+            width: 220px;
+            padding:15px;
+            justify-self: end;
+            
+            @media(min-width: 992px) {
+                justify-self: start;
+            }
+            @media(min-width: 1400px) {
+                justify-self: end;
+            }
+        }
+    }
+}
+        .container.two {
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            align-items: center;
+            justify-self: center;
+        
+             
+           @media(min-width:768px) {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);  
+           }
+            
+
+            @media(min-width:1400px) {        
+            display: flex;
+            flex-direction: row;
+            gap:30px;
+            }
+
+            h3 {
+                letter-spacing: -2px;
+            }
+                }
+        .dots {
+            display: flex;
+            font-size: 4rem;
+            color: #1919193a;
+            justify-content: center;
+           
+            
+            i {
+                max-width: 25px;
+                padding-bottom: 50px;
+            
+            &:hover {
+                color: #191919;
+            }
+        }
+    }
+}

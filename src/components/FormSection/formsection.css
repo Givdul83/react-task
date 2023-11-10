@@ -1,0 +1,68 @@
+.message {
+  background-color: #FFFFFF;
+}
+.message .container {
+  background-color: #F0EFE9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+.message h2 {
+  font-family: "DM sans", "sans serif";
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
+.message .error {
+  color: #f94d1C;
+  font-weight: 700;
+}
+.message input {
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 20px;
+}
+.message .your-mess {
+  align-self: center;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 20px;
+  height: 160px;
+}
+.message .your-mess input {
+  text-align: left;
+  height: 160px;
+  width: 80%;
+  position: relative;
+}
+.message .your-mess input::value {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.message .your-mess input::-moz-placeholder {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.message .your-mess input::placeholder {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.message .btn-yellow {
+  width: 80%;
+  align-self: center;
+}
+.message .registered {
+  color: rgb(119, 203, 119);
+  font-weight: 700;
+}

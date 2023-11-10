@@ -1,0 +1,121 @@
+.news-articles {
+    background-color: #FFFFFF;
+    
+
+   .container.one {
+    background-color: #FFFFFF;
+    padding: 0px;
+    padding-bottom: 40px;
+    
+    .section-title{
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        
+    
+
+        @media(min-width: 1200px) {
+        display: grid;
+        grid: 1f;
+        grid-template-areas: "p  n"
+                             "h2 btn";
+        }
+
+    p {
+        grid-area: p;
+    }
+    h2 {
+        grid-area: h2;
+        
+    }
+    .btn-transparent {
+        grid-area: btn;
+        border: 1px solid #191919;
+        text-align: center;
+        justify-content: center;
+        height: 55px;
+        width: 220px;
+        padding: 15px;
+        justify-self: end;
+        margin-top: 40px;
+
+        @media(min-width:1200px) {
+            margin-top: 0px;
+        }
+        
+    }
+    }
+    
+    }   
+
+    .container.dates {
+        background-color: #FFFFFF;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        gap:30px;
+    
+      
+        @media(min-width:992px) {
+            display: grid;
+            grid-template-columns:  auto auto;
+            justify-content: center;
+            column-gap: 40px;
+            text-align: left;
+             }
+             @media(min-width:1400px) {
+                display:flex;
+                flex-direction: row;
+                text-align: left;
+             }
+            }
+             .container.dates p {
+                color: #191919;
+            }
+            
+            .container.dates img {
+                margin-left: 0;
+                margin-right: 0;
+                
+             }
+            .date-3 {
+                grid-column: auto;
+                    
+                @media(min-width:992px) {
+                   grid-column: span 2; 
+                   margin-left: 0;
+                   margin-right: 0;
+                   justify-self: center;
+                   max-width: 550px;
+                   
+                }
+            
+            }
+
+    .container.dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 90px;
+        padding-top: 65px;
+         
+            i {
+                max-width: 25px;
+                padding-bottom: 50px;
+                font-size: 4rem;
+                color: #1919193a;
+                justify-content: center;
+               
+            }
+            #darkdot {
+                color: #191919;
+            }
+    }
+}

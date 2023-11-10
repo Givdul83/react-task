@@ -1,0 +1,29 @@
+.affiliates {
+        
+
+    background-color: #FFFFFF;
+    
+ 
+.container {
+    display: none;
+
+    @media (min-width: 992px) {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 75px;
+
+    }
+    img {
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        justify-content: center;
+        align-items: center;    
+    }
+}   
+        
+}

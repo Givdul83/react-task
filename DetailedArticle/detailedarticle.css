@@ -1,0 +1,118 @@
+.container.news {
+  background-color: #FFFFFF;
+  display: flex;
+  max-width: 1320px;
+  -moz-column-gap: 140px;
+       column-gap: 140px;
+}
+.container.news .container-details {
+  max-width: 760px;
+  padding-top: 160px;
+  display: grid;
+}
+.container.news .container-details h2 {
+  font-size: 45px;
+  font-family: "DM sans";
+  font-weight: 700;
+  margin-left: 10px;
+}
+.container.news .container-details .img {
+  max-width: 760px;
+  max-height: 500px;
+  margin-left: 10px;
+}
+.container.news .container-details .news-info {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: left;
+  align-items: last baseline;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  max-width: 550px;
+  font-family: "DM sans";
+  font-size: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+.container.news .container-details .news-info .dot {
+  color: #F9D783;
+  font-size: 3rem;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 0;
+  padding-bottom: 10px;
+  max-width: 20px;
+}
+.container.news .container-details .fixed-text {
+  margin-top: 45px;
+  margin-left: 10px;
+}
+.container.news .container-details .generic {
+  font-family: "Inter";
+  font-size: 16px;
+  font-size: 400;
+  letter-spacing: -1px;
+}
+.container.news .container-details .inside {
+  display: flex;
+  margin-top: 110px;
+  margin-bottom: 90px;
+}
+.container.news .container-details .marks {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.container.news .container-details .quote {
+  font-family: "DM sans";
+  font-size: 22px;
+  margin-top: 10px;
+}
+.container.news .rightside {
+  padding-top: 355px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.container.news .rightside .search {
+  max-height: 100px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+}
+.container.news .rightside input {
+  border-radius: 25px;
+  background-color: #f3f3f3;
+  border-color: transparent;
+  height: 55px;
+  width: 420px;
+  padding: 15px 55px;
+  font-family: "Inter";
+  font-size: 16px;
+}
+.container.news .rightside .fa-solid.fa-magnifying-glass {
+  position: absolute;
+  top: 35%;
+  left: 25px;
+  color: #191919;
+  z-index: 1;
+}
+.container.news .rightside .recent {
+  border: 1px solid black;
+}
+.container.news .rightside .posttitle {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 0px;
+  font-family: "DM sans";
+  font-size: 22px;
+  font-weight: 700;
+}
+.container.news .rightside .emptybox {
+  height: 5px;
+  width: 40px;
+  margin-left: 40px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

@@ -1,0 +1,136 @@
+.contact-ways {
+
+    background-color: #FFFFFF;
+
+    .container {
+        background-color: #FFFFFF;
+        gap:35px;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        @media(min-width: 992px) {
+        display:flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: center;
+        }
+    
+    
+        .btn-black {
+            font-size: 20px;
+            border:none;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: 50px;
+            margin-left: 55px;
+            margin-right: 25px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            grid-area: icon;
+
+            &:hover {
+                background-color: #F9D783;
+                
+                color:#191919;
+        
+            }
+            i {
+                margin: 0;
+                font-size: 1em;
+              
+            }
+        }
+           
+    }
+
+    article {
+        width: 420px;
+        height: 205px;
+        border:1px solid #666666;
+        text-align: left;
+        display:grid;
+        grid-template-columns: auto 1fr;
+       
+        grid-template-areas: "icon h3"
+                             "empty line-1"
+                             "empty line-2";
+                    }   
+                    
+    h3 {
+        grid-area: h3;
+        font-size: 22px;
+        font-weight: 700px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+    .line-1 {
+        grid-area: line-1;
+        letter-spacing: -1px;
+        line-height: 15px;
+        font-size: 18px;
+    }
+    .line-2 {
+        grid-area: line-2;
+        letter-spacing: -1px;
+        line-height: 15px;
+        font-size: 18px;
+    }
+    .phone-1 {
+        grid-area: line-1;
+        letter-spacing: -1px;
+        line-height: 15px;
+        text-decoration: none;
+        letter-spacing: -1px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #191919;
+        &:hover {
+            color:#f94d1C;
+    }
+    }
+    .phone-2 {
+        grid-area: line-2;
+        letter-spacing: -1px;
+        line-height: 15px;
+        text-decoration: none;
+        letter-spacing: -1px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #191919;
+        &:hover {
+            color:#f94d1C;
+    }
+    }
+    .mail {
+        grid-area: line-1;
+        text-decoration: none;
+        letter-spacing: -1px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #191919;
+        &:hover {
+            color:#f94d1C;
+    }
+
+    }
+    .support {
+        grid-area: line-2;
+        text-decoration: none;
+        letter-spacing: -1px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #191919;
+        &:hover {
+            color:#f94d1C;
+    }
+    }
+}
