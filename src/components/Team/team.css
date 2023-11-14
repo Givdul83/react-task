@@ -1,5 +1,6 @@
 .team {
   background-color: #F9D783;
+  opacity: 85%;
 }
 .team .container.one {
   padding-bottom: 75px;
@@ -89,5 +90,8 @@
   padding-bottom: 50px;
 }
 .team .dots i:hover {
+  color: #191919;
+}
+.team .fa-2xl {
   color: #191919;
 }

@@ -4,7 +4,7 @@ import ShowCaseBase from '../SecondaryShowCaseBase/ShowCaseBase'
 const ArticleShowCase = () => {
   return (
     <ShowCaseBase
-                    url = "news"
+                    url = '/news'
                     pagename= "News"
                     title= "News & Articles"
                     />

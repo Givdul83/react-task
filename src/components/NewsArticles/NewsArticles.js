@@ -1,44 +1,72 @@
 import React from 'react'
 import './newsArticles.css'
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-import img_classroom from '../../assets/images/classroom.png'
-import img_chat from '../../assets/images/chat.png'
-import img_books from '../../assets/images/books.png'
+import Article from '../ArticleGrid/Article';
+
 
 
 const NewsArticles = ({className}) => {
+
+    const [newsArticles, setNewsArticles]= useState([])
+
+    useEffect(() => {
+
+        
+  
+      async function getData() {
+        const amount = 3;
+        const result = await fetch (`https://win23-assignment.azurewebsites.net/api/articles?take=${amount}`)
+        const data= await result.json()
+  
+        console.log(data);
+        
+        
+         
+  
+         const listArticles = data.map(item => ({
+            author: item.author,
+            category: item.category,
+            content: item.content,
+            id: item.id,
+            imageUrl: item.imageUrl,
+            published: item.published,
+            title: item.title,
+         }));
+         setNewsArticles(listArticles);
+      }
+    
+         getData();
+    }, []);
+        
+
+
   return (
     <section className={`${className}`}>
             <div className="container one">
                 <div className="section-title">
                     <p>Article & News</p>
                     <h2>Get Every Single Articles & News</h2>
-                    <Link to='/news' target="_blank" className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-up-right"></i></Link>
+                    <Link to='/news' className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-up-right"></i></Link>
                 </div>
             </div>
             <div className="container dates">
-                <div className="date-1">
-                <img className="25" src={img_classroom}/>
-                <article className="empty-box"></article>
-                <p>Buisness</p>
-                <h3>How To Use Digitalization In The Classroom</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-            </div>
-            <div className="date-2">
-                <img className="17" src={img_chat}/>
-                <article className="empty-box"></article>
-                <p>Buisness</p>
-                <h3>How To Implement Chat GPT<br/> In Your Projects</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-            </div>
-            <div className="date-3">
-                <img className="13" src={img_books}/>
-                <article className="empty-box"></article>
-                <p>Buisness</p>
-                <h3>The Guide To Support Modern<br/> CSS Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-             </div>
+            {newsArticles.map((article , index) => (
+        <Link key={article.id} target='_blank' to={`/news/articleview/${article.id}`}>
+
+        <Article
+               
+                key={index}
+                category={article.category}
+                content={article.content}
+                id= {article.id}
+                imageUrl={article.imageUrl}
+                published={article.published}
+                title={article.title}
+                />
+                </Link>
+            ))}
             </div>
              <div className="container dots">
                 <i className="fa-regular fa-wifi-weak"id="darkdot"></i>
