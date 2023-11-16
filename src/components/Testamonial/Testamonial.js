@@ -4,6 +4,9 @@ import './testamonial.css'
 import img_cassandra from '../../assets/images/cassandra.svg'
 import img_amanda from '../../assets/images/amanda.svg'
 import img_jack from '../../assets/images/jack.svg'
+import Stars from './Stars';
+import Testamony from './Testamony';
+
 
 const Testamonial = () => {
   return (
@@ -15,51 +18,32 @@ const Testamonial = () => {
                    </div>
                    <div className="container two">
                     <div className="cassandra">
-                        <div className="stars">
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                        </div>
-                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati<br/> cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-
-                    <div className="mini-grid">
-                        <img src={img_cassandra} alt="image of Cassandra Warren, Business Manager, Dorfus"/>
-                        <h3>Cassandra Warren</h3>
-                        <p>Business Manager, Dorfus</p>
-                    </div>
+                       <Stars/>
+                       <Testamony 
+                             image= {img_cassandra}
+                             alt= "Image of Cassandra Warren, Business Manager at Dorfus"
+                             name= "Cassandra Warren"
+                             title="Business Manager, Dorfus"
+                             />
                     </div>
                   
                    <div className="amanda">
-                    <div className="stars">
-                        <i className="fa-sharp fa-solid fa-star"></i>
-                        <i className="fa-sharp fa-solid fa-star"></i>
-                        <i className="fa-sharp fa-solid fa-star"></i>
-                        <i className="fa-sharp fa-solid fa-star"></i>
-                        <i className="fa-sharp fa-solid fa-star"></i>
-                    </div>
-                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati<br/> cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-                    <div className="mini-grid">
-                    <img src={img_amanda} alt="image of Amanda Tulling, Senior Developer, Square"/>
-                    <h3>Amanda Tulling</h3>
-                    <p>Senior Developer, Square</p>
-                </div>
+                    <Stars/>
+                   <Testamony 
+                             image= {img_amanda}
+                             alt= "Image of Amanda Tulling, Senior Developer at Square"
+                             name= "Amanda Tulling"
+                             title="Senior Developer, Square"
+                             />
             </div>
             <div className="jack">
-                <div className="stars">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                </div>
-                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati<br/> cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-                <div className="mini-grid">
-                <img src={img_jack} alt="image of Jack McDogglas,Key Account Manager, Gobona"/>
-                <h3>Jack McDogglas</h3>
-                <p>Key Account Manager, Gobona</p>
-                </div>
+                <Stars/>
+                <Testamony
+                            image= {img_jack}
+                            alt = "image of Jack McDogglas, Key Acoount manager at Gobona"
+                            name= "Jack McDogglas"
+                            title="Key Account Manager, Gobona"
+                            />
             </div>
          </div>
          <div className="btn">

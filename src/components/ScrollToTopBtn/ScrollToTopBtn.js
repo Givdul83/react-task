@@ -19,7 +19,7 @@ const ScrollToTopBtn = () => {
     return (
       <div className="scroll">
       <button onClick={scrollToTop} className={`to-top ${position < 250 ? 'no-show'  : ''}`}>
-      <i class="fa-solid fa-arrow-up fa-2xl"></i>
+      <i className="fa-solid fa-arrow-up fa-2xl"></i>
         <p>Back To Top</p>
         </button>
         </div>

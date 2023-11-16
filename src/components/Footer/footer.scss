@@ -29,7 +29,11 @@ footer {
     
 
    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
    
+        @media(min-width:992px){
         display: grid;
         grid:1fr auto auto auto auto auto;
         grid-template-areas:"logo company tre resources link";
@@ -37,7 +41,7 @@ footer {
         padding-bottom: 0px;
         position: relative;
         z-index: 0;
-      
+        }
        
       
         .logo-text {
@@ -49,11 +53,16 @@ footer {
             grid-template-rows: 1fr 3fr;
             
             .logo {
+                padding-bottom: 70px;
+                
+            
+                @media(min-width:992px) {
                 grid-area: logo;
                 grid-area: span 2;
                 padding-bottom: 0px;
                 margin-bottom: 0px;
             }
+        }
            
              a {
                 grid-area: logo;
@@ -82,6 +91,11 @@ footer {
         }
 
         article {
+        
+            display:none;
+
+            @media(min-width:992px) {
+            display: block;
             display: grid;
             grid-template-rows: auto auto auto auto auto;
             z-index: 2;
@@ -99,7 +113,6 @@ footer {
             } 
         }
         .company {
-            
             grid-area: company;
             padding-right: 30px;
             
@@ -121,7 +134,7 @@ footer {
                     margin-bottom: 30px;
                 }
             }
-           
+        
         }
     }
     
@@ -233,4 +246,4 @@ footer {
 
     }
     }
-  
+}

@@ -31,13 +31,20 @@ footer .footer-1 .lines {
   }
 }
 footer .footer-1 .container {
-  display: grid;
-  grid: 1fr auto auto auto auto auto;
-  grid-template-areas: "logo company tre resources link";
-  padding: 0px;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  footer .footer-1 .container {
+    display: grid;
+    grid: 1fr auto auto auto auto auto;
+    grid-template-areas: "logo company tre resources link";
+    padding: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 0;
+  }
 }
 footer .footer-1 .container .logo-text {
   grid-area: logo;
@@ -47,10 +54,15 @@ footer .footer-1 .container .logo-text {
   grid-template-rows: 1fr 3fr;
 }
 footer .footer-1 .container .logo-text .logo {
-  grid-area: logo;
-  grid-area: span 2;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding-bottom: 70px;
+}
+@media (min-width: 992px) {
+  footer .footer-1 .container .logo-text .logo {
+    grid-area: logo;
+    grid-area: span 2;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 }
 footer .footer-1 .container .logo-text a {
   grid-area: logo;
@@ -79,130 +91,134 @@ footer .footer-1 .container .logo-text p {
   }
 }
 footer .footer-1 .container article {
-  display: grid;
-  grid-template-rows: auto auto auto auto auto;
-  z-index: 2;
-  position: relative;
+  display: none;
 }
-footer .footer-1 .container a {
+@media (min-width: 992px) {
+  footer .footer-1 .container article {
+    display: block;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    z-index: 2;
+    position: relative;
+  }
+}
+footer .footer-1 .container article a {
   display: grid;
   text-decoration: none;
   color: #FFFFFF;
 }
-footer .footer-1 .container h3 {
+footer .footer-1 .container article h3 {
   color: #FFFFFF;
   padding-top: 10px;
 }
-footer .footer-1 .company {
+footer .footer-1 .container .company {
   grid-area: company;
   padding-right: 30px;
 }
-footer .footer-1 .company .inside {
+footer .footer-1 .container .company .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .company .inside {
+  footer .footer-1 .container .company .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .company .inside h3 {
+footer .footer-1 .container .company .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .company .inside a {
+footer .footer-1 .container .company .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .company .inside a {
+  footer .footer-1 .container .company .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .help {
+footer .footer-1 .container .help {
   grid-area: tre;
   padding-right: 20px;
 }
-footer .footer-1 .help .inside {
+footer .footer-1 .container .help .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .help .inside {
+  footer .footer-1 .container .help .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .help .inside h3 {
+footer .footer-1 .container .help .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .help .inside a {
+footer .footer-1 .container .help .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .help .inside a {
+  footer .footer-1 .container .help .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .resources {
+footer .footer-1 .container .resources {
   grid-area: resources;
   padding-right: 20px;
 }
-footer .footer-1 .resources .inside {
+footer .footer-1 .container .resources .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .resources .inside {
+  footer .footer-1 .container .resources .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .resources .inside h3 {
+footer .footer-1 .container .resources .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .resources .inside a {
+footer .footer-1 .container .resources .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .resources .inside a {
+  footer .footer-1 .container .resources .inside a {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .links {
+footer .footer-1 .container .links {
   grid-area: link;
 }
-footer .footer-1 .links .inside {
+footer .footer-1 .container .links .inside {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .links .inside {
+  footer .footer-1 .container .links .inside {
     margin-bottom: 30px;
   }
 }
-footer .footer-1 .links .inside h3 {
+footer .footer-1 .container .links .inside h3 {
   margin-bottom: 40px;
 }
-footer .footer-1 .links .inside a {
+footer .footer-1 .container .links .inside a {
   margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  footer .footer-1 .links .inside a {
+  footer .footer-1 .container .links .inside a {
     margin-bottom: 30px;
   }
 }
-
-.border {
+footer .border {
   color: #707070;
 }
-
-.container.bottom {
+footer .container.bottom {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   padding-top: 35px;
 }
-.container.bottom p {
+footer .container.bottom p {
   color: #FFFFFF;
 }
-.container.bottom .social-media a {
+footer .container.bottom .social-media a {
   color: #FFFFFF;
   font-size: 1, 3rem;
   margin-left: 12px;
 }
-.container.bottom .social-media a:hover {
+footer .container.bottom .social-media a:hover {
   color: #666666;
 }

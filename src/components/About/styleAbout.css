@@ -32,8 +32,8 @@
   left: 50%;
   transform: translateX(-80%);
   background-color: #BEEBFF;
-  padding-top: 40px;
-  padding-bottom: 45px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   padding-left: 25px;
   padding-right: 30px;
   max-width: 365px;
@@ -43,6 +43,8 @@
   .about .container .part-1 .ontop-boxtext {
     left: 0%;
     transform: translateX(0%);
+    padding-top: 35px;
+    padding-bottom: 45px;
   }
 }
 .about .container .part-1 .ontop-boxtext h3 {
@@ -60,7 +62,6 @@
 .about .container .part-1 .ontop-boxtext .p2 {
   font-size: 16px;
   font-weight: 500;
-  padding-top: 25px;
   letter-spacing: -1px;
   max-width: 310px;
 }

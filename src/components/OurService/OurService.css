@@ -61,6 +61,7 @@
   .our-service .diff-service {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     -moz-column-gap: 30px;
          column-gap: 30px;
     margin-left: 0%;
