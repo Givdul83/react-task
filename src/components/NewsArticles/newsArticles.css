@@ -9,13 +9,14 @@
 .container.one .section-title {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   align-items: center;
 }
 @media (min-width: 1200px) {
   .container.one .section-title {
+    text-align: left;
     display: grid;
-    grid: 1f;
+    grid: 1fr;
     grid-template-areas: "p  n" "h2 btn";
   }
 }
@@ -121,20 +122,28 @@ a {
 }
 
 .newsbox {
-  max-width: 420px;
-  height: 430px;
-  position: relative;
+  max-width: 360px;
+  padding-bottom: 30px;
+}
+@media (min-width: 576px) {
+  .newsbox {
+    max-width: 420px;
+    height: 430px;
+    position: relative;
+  }
 }
 .newsbox .category {
   margin-top: 25px;
 }
-.newsbox .img {
+
+.img {
   width: 100%;
   height: 230px;
   margin-left: 0;
   z-index: 0;
 }
-.newsbox .hidden {
+
+.hidden {
   display: none;
 }
 

@@ -9,17 +9,22 @@ footer {
         position: relative;  
 
         .lines {
-            display:none;
+            display:block;
+            max-width:50%;
+            color:#666666;
+            position: absolute;
+            bottom: 0;
+            right:0; 
+            max-width:50%;
+            z-index: 1;
+
+            @media(min-width:992px) {
+                display: none;
+            }
         
             @media(min-width:1200px) {
                 display:block;
-                max-width:50%;
-                color:#666666;
-                position: absolute;
-                bottom: 0;
-                right:0; 
-                max-width:50%;
-                z-index: 1;
+               
             }
        
         @media(min-width:1400px) {
@@ -32,15 +37,16 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: 0;
    
         @media(min-width:992px){
         display: grid;
         grid:1fr auto auto auto auto auto;
         grid-template-areas:"logo company tre resources link";
-        padding: 0px;
-        padding-bottom: 0px;
-        position: relative;
-        z-index: 0;
+        
         }
        
       
@@ -50,7 +56,7 @@ footer {
             justify-content: left;
             grid-template-areas: "logo"
                                   "p";
-            grid-template-rows: 1fr 3fr;
+            grid-template-rows: 1fr 2fr;
             
             .logo {
                 padding-bottom: 70px;
